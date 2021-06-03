@@ -1,0 +1,681 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+/**********hiding the scroll bar from all scrollers***********/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/****body******/
+ body{
+    background:linear-gradient(to top , #000 , #000070);
+ }
+
+/*********global declaration*********/
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/************************navbar inside header*****************/
+
+#navbar{
+    /**Will be used further**/
+}
+
+.nav-header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width : 100%;
+	height : 70px;
+	position: fixed;
+	top : 0;
+	left : 0;
+	right : 0;
+	z-index : 16;
+	background-color: #00007b;
+    box-shadow: 0px 0px 12px 8px #000000;
+}
+
+.nav-left{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.nav-right{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-basis: 1;
+}
+
+.nav-left a{
+	margin : 0.5rem 0.8rem;
+	text-decoration: none;
+	color : white;
+	padding : 0.375rem 0.75rem;
+}
+
+/**********form*************/
+.nav-form{
+	text-align: center;
+	vertical-align: middle;
+	align-items: baseline;
+}
+
+.nav-form input{
+	padding: 0.3rem 0.75rem;
+    outline: none;
+    font-size: 1rem;
+    vertical-align: -webkit-baseline-middle;
+    border: 1px solid transparent;
+    line-height: 1.2;
+    color: grey;
+    background-color: #222065;
+}
+
+.nav-form  i{
+	padding : 0.35rem 0.75rem; 
+	line-height: 1.2;
+    color : grey;
+    font-size: 1rem;
+    vertical-align: bottom;
+	background-color: #222065;
+}
+
+.nav-right span{
+	margin: 0.5rem 1.5rem;
+}
+
+.nav-hamburger{  /**hide currently**/
+	display: none;
+	color: white;
+    margin: 0.5rem 1.5rem;
+    font-size: 1.8rem;
+}
+
+/***********bell**************/
+.notify{
+	position: relative;
+}
+
+.notify i{
+	color : white;
+	font-size: 1.5rem;
+}
+
+.red-dot{
+	width: 0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 1%;
+}
+/***************user image******/
+.user-img img{
+	border-radius: 50%;
+}
+
+.user-log-out{
+	top : 63px !important;
+	left : unset !important;
+	right: 5%;
+}
+
+.user-log-out li{
+	border : none;
+}
+
+
+/*************************************************************/
+
+
+/****************main******************/
+
+main{
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	width: 65%;
+	margin : 135px 1rem 2rem 1rem;
+}
+
+/*********headings*******/
+.heading{
+	font-size: 1.1rem;
+	font-weight: 700;
+	color : white;
+	margin-bottom: 20px;
+	margin-left: 1rem;
+}
+
+/******grid-container-0****/
+.grid-container-0{
+	display: none;
+	grid-template-columns: 1fr;
+	margin-bottom: 40px;
+}
+
+/******grid-container-1****/
+.grid-container-1{
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-content: space-between;
+	grid-column-gap: 1rem;
+	margin-bottom:40px;
+}
+
+.grid-container-1 div{
+	height: 180px;
+	box-shadow: 0px 0px 8px 2px black;
+	
+	transition: all 1s ease-in-out;
+	border-radius: 0rem 2.5rem 0rem 2.5rem;  
+}
+
+.grid-container-1 img{
+	border-radius: 0rem 2.5rem 0rem 2.5rem;
+}
+
+/**********grid-container-2*******/
+.grid-container-2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	margin-bottom: 25px;
+}
+
+.grid-container-2 > div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+}
+
+.left-flex{  /*same as nav-left*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+   flex-grow: 1;
+}
+
+.grid-container-2 span , .aside-heading span{
+
+   margin: 0.5rem 0.8rem;
+   color : white;
+}
+
+.right-flex , .aside-right{
+	position: relative;
+}
+
+/***three dots hover list*******/
+.dot-options{
+	display: none;
+	position: absolute;
+	background-color: white;
+	top : 18px;
+	left : -132px;
+	z-index: 11;
+	color : black;
+	text-decoration: none;
+	list-style: none;
+	transition: all 2s ease-in-out;
+}
+
+.ham-options{
+	left : unset;
+	right : 32px;
+	top : 50px;
+}
+
+.dot-options li{
+	display: flex;
+	font-size: 0.8rem;
+	align-items: center;
+	/*border: 1px solid black;*/
+	margin-top: 1px;
+	width: 151px;
+	height: 36px;
+}
+
+.ham-options li{
+	font-size: 1rem;
+	margin : 1rem;
+}
+.dot-options i{
+	color:grey;
+}
+
+.ham-options i{
+	margin: 0rem 0.8rem;
+}
+
+
+
+/***********artist list************/
+
+.artist{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+}
+
+.artist div{
+	width : 170px;
+	height : 190px;
+	border-radius: 50%;
+	padding: 0.5rem 0.5rem;
+}
+
+.artist img{
+	border-radius: 50%;
+	width: 100%;
+	height : 100%;
+}
+
+figcaption{
+	color : white;
+	font-size: 0.7rem
+}
+
+/******************club*****************/
+
+
+.club{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #24134e;
+	margin-bottom: 15px;
+}
+
+.club > div{
+   height : 120px;
+   width: 120px;
+   border-radius: 50%;
+   padding : 0.2rem 0.2rem;
+}
+
+.club img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	padding: 0.2rem 0.2rem;
+
+}
+
+/*********************songs-types*****************/
+
+.song-types{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.song-types div{
+	width : 280px;
+	height : 160px;
+	padding: 0.5rem 0.5rem;
+	overflow: hidden;
+	}
+
+.song-types img{
+	width: 100%;
+	height: 100%;
+	transition: transform 1s ease-in-out;
+}
+
+
+/*************tadka class************/
+.tadka{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 35px
+}
+.tadka div{
+  width: 140px;
+  height: 210px;
+}
+
+.tadka img{
+	width : 100%;
+	height : 100%;
+}
+
+
+/*****************************aside**********************/
+
+aside{
+	position: fixed;
+}
+.aside1 {
+	vertical-align: top;
+    display: inline-block;
+    width: 28%;
+    text-align: -webkit-right;
+    margin-top: 165px;
+    color : white;
+    z-index: 11;
+    margin-left: 12px;
+}
+
+.aside2{
+	z-index: 11;
+	vertical-align: top;
+    display: inline-block;
+    width: 28%;
+    margin-top: 213px;
+    margin-left: 45px;
+    height: 61vh;
+    position: fixed;
+    overflow: scroll;
+}
+
+
+.aside-heading{
+	display: flex;
+	align-items: center;
+	width: 87%;
+	
+}
+.aside-grid{
+	display: grid;
+	grid-template-columns: 1fr;
+	width: 87%;
+	margin-bottom: 70%;
+}
+.aside-grid span{ 
+	color: white;
+	margin: 0.5rem 0.7rem;
+}
+
+/***will be used further thats why redundant here***/
+.aside-box{ 
+   display: flex;
+   align-items: center;
+}
+
+.aside-left{
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.aside-right{
+	display: flex;
+	align-items: center;
+}
+
+
+
+/***************************hover effects**********************/
+
+.dot:hover .dot-options{
+   display: block;
+}
+
+.dot:hover .ham-options{
+	display: block;
+}
+.user-img:hover .dot-options{
+	display: block;
+}
+
+.grid-container-1 div:hover{
+	transform: scale(1.12);
+	opacity: 0.9;
+}
+
+.on{
+	position: relative;
+	transition: hover 2s ease-in-out;
+}
+.write{
+	position: absolute;
+	top : 0;
+	left : 0;
+	right : 0;
+	vertical-align: middle;
+	text-align: center;
+	color : white;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.on:hover .write{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: blue;
+}
+
+.on:hover{
+	background-color: transparent;
+}
+
+.on:hover img{
+	opacity : 0.5;
+}
+
+
+.logo{
+	transition: transform 1s ease-in-out ;
+}
+.logo:hover{
+  transform: rotate(520deg);
+}
+.nav-labels{
+	transition : color 1s ease-in-out;
+}
+.nav-labels:hover{
+	text-decoration: underline;
+	color :#cab7b7;
+}
+
+.subscription:hover{
+	background-color: white;
+	color : black;
+}
+
+/**************footer(media player for desktop)**************/
+.foot{
+	position : fixed;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    background-color: black;
+    box-shadow: 0px 0px 12px 8px blue;
+    
+    
+}
+.foot:target{
+   display: grid;
+}
+
+.foot i{
+	color : white;
+	font-size: 1rem;
+}
+
+.left-foot{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.left-foot ul , .middle-foot ul{
+	display: inline-flex;
+	flex-direction: row;
+	list-style: none;
+	text-decoration: none;
+	align-items: center;
+}
+
+.left-foot li{
+	color : white;
+	margin : 0.5rem 1rem 0.8rem 1rem;
+}
+
+.middle-foot{
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: center;
+}
+
+.middle-foot ul{
+	display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+}
+
+.middle-foot span{
+	 margin : 1rem 1rem 0.8rem 1rem;
+}
+
+.right-foot{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player{
+	width : 350px;
+	height : 10px;
+	border-radius: 0.25rem;
+	background-color: white;
+	margin-bottom: 1rem;
+	position: relative;
+	margin : 1rem auto 1rem auto;
+}
+
+.inner-player{
+	width : 1rem;
+	height: 0.5rem;
+	background-color: #0072ff;
+	border-radius: 0.25rem 0rem 0rem 0.25rem;
+	position: absolute;
+	top : 5%;
+	left : 0;
+	animation: timer 60s linear;
+}
+
+
+
+
+/***********premium container (for mobile view only)***********/
+
+.subscription{
+	font-size: 1.2rem;
+	padding : 0.375rem 2.7rem;
+	border-radius: 50rem;
+	color : white;
+	background-color: transparent;
+	outline: none;
+	border : 1px solid white;
+	line-height: 1.5;
+	white-space: nowrap;
+	font-weight: 700;
+	display: flex;
+
+}
+
+.premium-container{
+	display: none;
+	background: linear-gradient(#000000 , darkblue);
+	grid-template-columns: 1fr;
+	grid-row-gap: 1.2rem;
+	padding: 1.5rem 1.5rem;
+}
+.premium-container div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.premium-container h1 , .premium-container h4{
+	color : white;
+	justify-content: center;
+	text-align: center;
+}
+
+.premium-container p{
+	color: #b79f9f;
+	margin: 0 1.1rem;
+	text-align: center;
+}
+
+
+
+/***********************media query****************************/
+
+
+@media only screen and (max-width:866px){
+   
+    .premium-container , .grid-container-0{
+    	display: grid;
+    }
+
+    main{
+    	display: flex;
+    	width: 88%;
+    }
+
+    aside , .nav-right , .nav-labels{
+    	display: none;
+    }
+
+    .nav-hamburger{	
+    	display: flex;
+    	
+    }
+   
+    .song-types{
+    	justify-content: center;
+    }
+
+    .club , .artist{
+		flex-wrap: wrap;
+        justify-content: space-evenly;
+	}
+
+	.grid-container-1{
+		display: none;
+		grid-template-columns: 1fr;
+		grid-row-gap: 2rem;
+	}
+
+	.grid-container-2{
+
+           grid-template-columns: 1fr;
+	}
+
+	.listen{
+		border-radius: 15px 15px 15px 15px;
+		box-shadow: 0px 0px 12px 8px #000000;
+	}
+}
+
+@media only screen and (max-width: 321px){
+
+	.tadka{
+       justify-content: center;
+       align-items: center;
+	}
+}

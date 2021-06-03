@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Playlist</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="assets/play.png">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<!-- playlist-style -->
+	<link rel="stylesheet" type="text/css" href="playlist-style.css">
+   <!-- viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+ <!-- Navbar -->
+<nav id = "navbar">
+       
+       <div class="nav-header">
+       	     <!-- left side -->
+       	   <div class = "nav-left">
+
+       	   	    <a href="index.html"><img src="assets/play.png" width = "50px" height = "50px" class = "logo"> <h5 style = " color : white;display: inline-block;">Musify</h5></a>
+                
+       	   	    <a href = "#" class = "nav-labels"> Favourities</a>
+       	   </div>
+             <!-- right-side -->
+       	   <div class = "nav-right">
+               <!-- search form -->
+             <div class= "nav-form">    
+                       <!-- inline css used here -->
+                       <i class="fas fa-search" style="border-radius: 0.5rem 0rem 0rem 0.5rem;margin-right: -0.3rem;"></i>
+                       <input type="text" name="search" placeholder="Search">
+                       <i class="fas fa-microphone" style="border-radius: 0rem 0.5rem 0.5rem 0rem;margin-left : -0.3rem;"></i>
+             </div>
+             
+                 <!-- notifications -->
+                <span  class = "notify"><i class="fas fa-bell"></i><div class="red-dot"></div></span>
+                  <!-- user-image -->
+                <span class = "user-img"><a href = "#"><img src="assets/hritik.jpg" width="50px" height="50px"></a></span>
+       	   </div>
+
+            <!-- hamburger will be shown in mobile view -->
+            <div class="nav-hamburger"> 
+               <span><i class="fas fa-bars"></i></span>
+               <ul class="dot-options">
+                 <li><span><i class="fas fa-thumbs-up"></i></span>Favourites</li>
+                 <li><span><i class="fas fa-bell"></i></span>Notifications</li>
+                 <li><span><i class="fas fa-info"></i></span>Musify Officials</li>
+                 <li><span><i class="fas fa-sign-out-alt"></i></span>Sign Out</li>
+               </ul>
+            </div>
+
+       </div>
+</nav>
+
+<!-- main -->
+<main>
+	     <!-- main-header -->
+	     <header class = "main-header">
+	  	     <!-- image section -->
+	  	     <div class = "header-img">
+	  	    	<img src="assets/ninjat.jpg" width="100%" height = "100%">
+	  	     </div>
+             <!-- header data section -->
+	  	     <div class = "header-data">
+               <h2>Punjabi Tadka</h2>
+               <p>Recently Added<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+               <br>
+
+                <span>
+                	<span>
+                		<button type = "button">Play All</button>&nbsp;&nbsp;&nbsp;
+                		<span>Follow</span>
+                	</span><br><br>
+                		<span>247 Tracks | 128 Albums</span>
+                </span>
+	  	     </div>
+	   </header>
+
+      <!-- play list -->
+     <div class = "play-list">
+         
+          <div class = "play-box">
+                <!-- left side of playlist box -->
+                <ul>
+                    <li><span>00</span></li>
+                    <li><a href="#footer" class="on"><img src = "assets/ic1.png" width = "50px" height = "46px">
+                     <i class="fab fa-google-play write"></i>
+                    </a></li>
+                    <li><span>Meligotta</span><br><span style = "color : grey">Sumersa</span></li>
+                </ul>
+                 <!-- right side of playlist box -->
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>01</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic2.png" width = "50px" height = "46px">
+                     <i class="fab fa-google-play write"></i>
+                    </a></li>
+                    <li><span>Sohne Phul</span><br><span style = "color : grey">Shivjot</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>02</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic3.png" width = "50px" height = "46px">
+                    <i class="fab fa-google-play write"></i>
+                    </a></li>
+                    <li><span>Facebook</span><br><span style = "color : grey">Billa</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>03</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic4.png" width = "50px" height = "46px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Jatt te</span><br><span style = "color : grey">Dilpreet</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>04</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic5.png" width = "50px" height = "46px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Plazzo2</span><br><span style = "color : grey">Kulvinder</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>05</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic6.png" width = "50px" height = "46px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Plazzo</span><br><span style = "color : grey">Kulvinder</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>06</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic7.png" width = "50px" height = "46px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Gulabi Pug</span><br><span style = "color : grey">Diljeet</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>07</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic8.png" width = "50px" height = "46px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>8 Raflaan</span><br><span style = "color : grey">Mankirat Aulakh</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>08</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic9.png" width = "50px" height = "46px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Time Table</span><br><span style = "color : grey">Kulvinder Billa</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+
+          <div class = "play-box">
+            
+                <ul>
+                    <li><span>09</span></li>
+                    <li><a href = "#footer" class="on"><img src = "assets/ic10.png" width = "50px" height = "46px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Sira E Hou</span><br><span style = "color : grey">Amrit Mann</span></li>
+                </ul>
+
+                <div class="play-box-icons">
+                     <span><i class="far fa-heart"></i></span>
+                     <span><i class="fas fa-plus"></i></span>
+                </div>
+          </div>
+    </div>
+</main> 
+
+<aside>
+    <!-- upper-aside -->
+  <div id="aside1">
+  
+      <div class="aside-container">
+         
+            <div class="aside-head">
+               
+                <span class="artist">Similar Artists</span>
+                <span class="view">View All</span>
+            </div>
+
+            <div class="aside-column">
+               
+              <ul>
+                <li><a href="#footer" class="on"><img src = "assets/artist7.png" width = "65px" height = "65px"><i class="fab fa-google-play write"></i></a></li>
+
+                <li><span>Kulvinder Billa</span><br><span style="color : grey;">Singer</span></li>
+              </ul> 
+
+              <div class="right-aside">
+                 
+                     <span class="dot"><i class="fas fa-ellipsis-h"></i>
+                        <ul class="dot-options three-dots">
+                                   <li><a href = "#"><span><i class="fas fa-plus"></i></span>Add To Queue</a></li>
+                                   <li><a href= "#"><span><i class="fas fa-play"></i></span>Play Now</a></li>
+                                   <li><a href = "#"><span><i class="fas fa-bars"></i></span>Add To Favourites</a></li>
+                                   <li><a href = "#"><span><i class="fas fa-info-circle"></i></span>Get Info</a></li>
+                                 </ul>
+                     </span><br>
+                     <span style="color : grey;">4:44</span>
+                     
+               </div>
+            </div>
+
+            <div class="aside-column">
+               
+              <ul>
+                <li><a href="#footer" class="on"><img src = "assets/artist2.png" width = "65px" height = "65px"><i class="fab fa-google-play write"></i></a></li>
+
+                <li><span>Parmish Verma</span><br><span style="color : grey;">Singer 'N' Actor</span></li>
+              </ul> 
+
+              <div class="right-aside">
+                 
+                     <span class="dot"><i class="fas fa-ellipsis-h"></i>
+                          <ul class="dot-options three-dots">
+                                   <li><a href = "#"><span><i class="fas fa-plus"></i></span>Add To Queue</a></li>
+                                   <li><a href= "#"><span><i class="fas fa-play"></i></span>Play Now</a></li>
+                                   <li><a href = "#"><span><i class="fas fa-bars"></i></span>Add To Favourites</a></li>
+                                   <li><a href = "#"><span><i class="fas fa-info-circle"></i></span>Get Info</a></li>
+                                 </ul>
+                     </span><br>
+                     <span style="color : grey;">4:44</span>
+               </div>
+            </div>
+
+            <div class="aside-column">
+               
+              <ul>
+                <li><a href="#footer" class="on"><img src = "assets/artist3.png" width = "65px" height = "65px"><i class="fab fa-google-play write"></i></a></li>
+
+                <li><span>Amrinder Gill</span><br><span style="color : grey;">Singer 'N' Actor</span></li>
+              </ul> 
+
+              <div class="right-aside">
+                 
+                     <span class="dot"><i class="fas fa-ellipsis-h"></i>
+                        <ul class="dot-options three-dots">
+                                   <li><a href = "#"><span><i class="fas fa-plus"></i></span>Add To Queue</a></li>
+                                   <li><a href= "#"><span><i class="fas fa-play"></i></span>Play Now</a></li>
+                                   <li><a href = "#"><span><i class="fas fa-bars"></i></span>Add To Favourites</a></li>
+                                   <li><a href = "#"><span><i class="fas fa-info-circle"></i></span>Get Info</a></li>
+                                 </ul>
+                     </span><br>
+                     <span style="color : grey;">4:44</span>
+               </div>
+            </div>
+      </div>
+  </div>
+
+   <!-- down-aside -->
+  <div id="aside2">
+    
+        <div class = "aside-container">
+           
+           <div class="aside-head">
+               
+                <span class="artist">Similar Songs</span>
+                <span class="view">View All</span>
+           </div>
+
+           <div class="aside-column">
+                
+                 <ul>
+                    <li><span>01</span></li>
+                    <li><a href="#footer" class="on"><img src = "assets/ic1.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Jatt de thikane</span><br><span style = "color : grey">Jass Manak</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+
+           <div class="aside-column">
+                
+                 <ul>
+                    <li><span>02</span></li>
+                    <li><a href="#footer" class="on"><img src = "assets/ic2.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Peg</span><br><span style = "color : grey">Diljeet</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+
+           <div class="aside-column">
+                
+                 <ul>
+                    <li><span>03</span></li>
+                    <li><a href="#footer"class="on"><img src = "assets/ic3.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Pug</span><br><span style = "color : grey">Ammy Virk</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+
+
+           <div class="aside-column">
+                
+                 <ul>
+                    <li><span>04</span></li>
+                    <li><a href="#footer"class="on"><img src = "assets/ic4.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Ocean</span><br><span style = "color : grey">Morni Scandal</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+
+
+           <div class="aside-column">
+                
+                 <ul>
+                    <li><span>05</span></li>
+                    <li><a href="#footer"class="on"><img src = "assets/ic5.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Ganni</span><br><span style = "color : grey">Prabh Jot</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+           
+            <div class="aside-column">
+                
+                 <ul>
+                    <li><span>06</span></li>
+                    <li><a href="#footer"class="on"><img src = "assets/ic6.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Jatt da pajama</span><br><span style = "color : grey">Dosanjh</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+
+
+            <div class="aside-column">
+                
+                 <ul>
+                    <li><span>07</span></li>
+                    <li><a href="#footer"class="on"><img src = "assets/ic7.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Panni di gal</span><br><span style = "color : grey">Muninder Butter</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+
+
+            <div class="aside-column">
+                
+                 <ul>
+                    <li><span>08</span></li>
+                    <li><a href="#footer"class="on"><img src = "assets/ic8.png" width = "50px" height = "50px"><i class="fab fa-google-play write"></i></a></li>
+                    <li><span>Nakhra</span><br><span style = "color : grey">Muninder Butter</span></li>
+                  </ul>
+
+                  <div class = "right-aside">
+                       <span><i class="far fa-heart"></i></span>
+                  </div>
+           </div>
+        </div>   
+  </div>
+  
+  
+
+</aside> 
+
+<!-- footer -->
+<footer>
+    
+      <div id = "footer" class="foot">
+         
+          <div class="left-foot">
+            
+                   <ul>
+                      <li><span><a href="#"><img src = "assets/Capture1.png" width = "42px" height = "42px"></a></span></li>
+                      <li><span>Jatt te</span><br><span style="color: grey">Dilpreet</span></li>
+                      <li><span><i class="far fa-heart"></i></span></li>
+                      <li><span><i class="fas fa-volume-mute"></i></span></li>
+                   </ul>
+          </div>
+          
+           <div class="middle-foot">
+                   
+                   <ul>
+                      <li><span><i class="fas fa-random fa-sm"></i></span></li>
+                      <li><span><i class="fas fa-step-backward"></i></span></li>
+                      <li><span><i class="fas fa-pause fa-lg"></i></span></li>
+                      <li><span><i class="fas fa-step-forward"></i></span></li>
+                      <li><span><i class="fas fa-circle-notch fa-sm"></i></span></li>
+                    </ul>
+                    
+                    <div class = "player">
+                        
+                         <div class = "inner-player">
+                           
+                         </div>
+                    </div>
+           </div>
+
+           <div class="right-foot">
+             
+                   <span style = "margin-right: 0.8rem"><i class="fas fa-volume-up"></i></span>
+                   <input type="range" name="range">&nbsp;&nbsp;&nbsp;&nbsp;
+                   <a href="#" style = "margin-left: 4rem"><span><i class="fas fa-times"></i></span></a>
+           </div>
+      </div>
+</footer>
+       
+</body>
+</html>

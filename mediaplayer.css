@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	font-weight: 700;
+}
+
+/*********common adjustments**********/
+h5{
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+p{
+	font-size: 1.5rem;
+}
+
+
+/************background image***********/
+.bg-image{
+     position: relative;
+    width: 100vw;
+    background-image: url(assets/Capture6.png);
+    filter: blur(15px);
+    -webkit-filter: blur(25px);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+/****************grid container***************/
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.1rem;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.grid-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.grid-box img{
+	height: 250px;
+	width: 250px;
+}
+
+/****************playline**********/
+.play{
+	width: 80%;
+	height: 8px;
+	border: 1px solid white;
+	border-radius: 0.25rem;
+	position: relative;
+}
+
+.play-line{
+ position: absolute;
+ top : 0;
+ left : 0;
+ background-color: darkgreen;
+ width: 1%;
+ height:  0.4rem;
+ width: 0.4rem;
+ animation : travel 20s linear infinite;
+}
+
+/********icons**********/
+.icons{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+.icons i{
+	color: black;
+	font-size: 2rem;
+
+}
+
+/*****keyframes*******/
+@keyframes travel{
+	100%{
+		width: 100%;
+	}
+}
